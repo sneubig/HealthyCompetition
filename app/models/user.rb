@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	belongs_to :league
 
 	def init
 		# Instantiate the Choreo, using a previously instantiated TembooSession object, eg:
