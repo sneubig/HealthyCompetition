@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require normalize.css.scss
+ *= require global.css.scss
+ *= require teams.css.scss
  *= require welcome.css.scss
  *= require_self
  */

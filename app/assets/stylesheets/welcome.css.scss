@@ -1,11 +1,8 @@
-*{
-	border-sizing: border-box;
-}
-
-html, body{
-	width: 100%;
+.container{
 	height: 100%;
-	background-color: rgba(0,250,0,0.3);
+	width: 100%;
+	background-color: rgba(0,250,0,0.5);
+
 }
 .signin{
 	width: 20%;
@@ -13,4 +10,7 @@ html, body{
 	border: 1px solid black;
 	background: yellow;
 	margin: 0 auto;
+	h4{
+		text-align: center;
+	}
 }
