@@ -5,8 +5,27 @@
 }
 
 .standings{
-	height: 50%;
+	height: 60%;
 	width: 50%;
 	border: 1px solid white;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	h2{
+		text-align: center;
+		text-decoration: underline;
+		color: white;
+	}
+}
 
+.sidebar{
+	height: 100%;
+	width: 20%;
+	border-left: 1px solid white;
+	float: right;
+	h2{
+		color: white;
+		text-align: center;
+		text-decoration: underline;
+	}
 }
