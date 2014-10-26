@@ -1,0 +1,16 @@
+*{
+	border-sizing: border-box;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,250,0,0.3);
+}
+.signin{
+	width: 20%;
+	height: 20%;
+	border: 1px solid black;
+	background: yellow;
+	margin: 0 auto;
+}
