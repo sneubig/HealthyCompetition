@@ -4,12 +4,27 @@
 	background-color: rgba(0,250,0,0.5);
 
 }
+
+.logo{
+	width: 30%;
+	height: 50%;
+	border: 1px solid white;
+	border-radius: 60%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	h1{
+		font-size: 4em;
+	}
+}
 .signin{
 	width: 20%;
 	height: 20%;
 	border: 1px solid black;
+	position: absolute;
+	top: 40%;
+	left: 60%;
 	background: yellow;
-	margin: 0 auto;
 	h4{
 		text-align: center;
 	}
