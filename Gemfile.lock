@@ -41,6 +41,9 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    fitgem (0.10.0)
+      oauth
+    hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.4)
@@ -55,6 +58,17 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.2)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
+    oauth (0.4.7)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    omniauth-fitbit (1.0.4)
+      multi_xml
+      omniauth-oauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     pg (0.17.1)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -113,8 +127,10 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   figaro
+  fitgem
   jbuilder (~> 2.0)
   jquery-rails
+  omniauth-fitbit
   pg
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
