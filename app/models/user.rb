@@ -1,3 +1,5 @@
+require 'figaro'
+
 class User < ActiveRecord::Base
 
 	def init
