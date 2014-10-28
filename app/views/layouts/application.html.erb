@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to "Sign in with FitBit", "/auth/fitbit" %> 
+
+
+<% if current_user %>
+	Welcome, <%= current_user.name %>
+<% else %>	
+	<%= link_to "Sign in with FitBit", "/auth/fitbit" %> 
+<% end %>
+
 <%= yield %>
 
 </body>

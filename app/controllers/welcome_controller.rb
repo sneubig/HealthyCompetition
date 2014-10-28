@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
 
 	def index
-		@user = session["user"]
+		# raise session.to_yaml
+		# reset_session
 	end
 end
