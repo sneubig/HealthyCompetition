@@ -11,5 +11,7 @@
 	<%= @response.body %>
 	</br>
 	</br>
-	<%= @activities.body %>
+	Steps: <%= JSON.parse(@activities.body)["summary"]["steps"] %>
+
+	Steps: <%= @summary %>
 </div>

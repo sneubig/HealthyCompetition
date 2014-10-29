@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'json'
 gem 'oauth'
 gem 'httparty'
 gem 'pry'
