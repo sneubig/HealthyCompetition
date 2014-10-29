@@ -1,12 +1,12 @@
 class TeamsController < ApplicationController
 
 	def index
-		# @league = League.find(params[:league_id])
+		@league = League.find(params[:league_id])
 		@teams = Team.all
 	end
 
 	def show
-		# @league = League.find(params[:league_id])
+		@league = League.find(params[:league_id])
 		@team = Team.find(params[:id])
 	end
 
