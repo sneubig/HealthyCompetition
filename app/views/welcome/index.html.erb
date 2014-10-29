@@ -1,14 +1,45 @@
-<div class="container">
-	<div class="logo">
-		<h1>Healthy</h1>
-		<h1>Competition</h1>
+<% if current_user %>
+	<p> Welcome back <%= current_user.name %> </p>
+
+	<div class="container">
+		<div class="logo">
+			<h1>Healthy</h1>
+			<h1>Competition</h1>
+
+		</div>
+		<div class="signin">
+			<% if :team_name === nil %>
+				<a href="/teams/new"><h4>I'm ready to get fit!</h4></a>
+			<% else %>
+				<a href="/teams"><h4>I'm ready to get fit!</h4></a>
+			<% end %>
+		</div>
+
+
+
+
+
+
+		<%= @response.body %>
+		</br>
+		</br>
+		Steps: <%= @summary %>
+		</br>
+		</br>
+		Steps for the week: <%= @weekly_steps.body %> 
+		</br>
+		</br>
+		</br>
+		</br>
+		<% @week_steps_summary.each do |day| %>
+			<%= day %>
+		<% end %>
+		
+
+
 
 	</div>
-	<div class="signin">
-		<a href="/leagues"><h4>I'm ready to get fit!</h4></a>
-	</div>
-	<%= @response.body %>
-	</br>
-	</br>
-	Steps: <%= @summary %>
-</div>
+
+
+
+<% end %>
