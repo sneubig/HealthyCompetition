@@ -5,13 +5,10 @@
 
 	</div>
 	<div class="signin">
-		<a href="#"><h4>I'm ready to get fit!</h4></a>
-		<a href="#"><h4>Login</h4></a>
+		<a href="/leagues"><h4>I'm ready to get fit!</h4></a>
 	</div>
 	<%= @response.body %>
 	</br>
 	</br>
-	Steps: <%= JSON.parse(@activities.body)["summary"]["steps"] %>
-
 	Steps: <%= @summary %>
 </div>
