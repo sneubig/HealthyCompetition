@@ -5,7 +5,7 @@
 	<div class="standings">
 		<h2>Standings</h2>
 		<% @teams.each do |team| %>
-			<li><%= team.name %></li>
+			<li> <%= team.name %> <%= team.steps %></li>
 		<% end %>
 	</div>
 	<div class="sidebar">
@@ -13,12 +13,16 @@
 		<div class="matchup">
 			<div class="teams">
 				<% @teams.each do |team| %>
-					<li><%= team.name %></li>
+					<li><%= team.name %> </li>
 				<% end %>
 			</div>
 			
 			<div class="score">
-				<p>Steps: <%= @summary %></p>
+				<!-- <li> <%= @summary %> </li> -->
+				<% @teams.each do |team| %>
+					<li> <%= team.steps %> </li>
+				<% end %>
+
 			</div>
 		</div>
 	</div>
