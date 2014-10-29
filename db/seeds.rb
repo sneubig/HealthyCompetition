@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+teams = Team.create([
+	{ name: "SpeedWalkers", steps: 2700},
+	{ name: "RoadRunners", steps: 2354}, 
+	{ name: "Eat Pavement", steps: 4330}, 
+	{ name: "Speed Racer", steps: 3740},
+	{ name: "Fred's Team", steps: 4000}, 
+	{ name: "Dont Run!", steps: 3500}
+])
