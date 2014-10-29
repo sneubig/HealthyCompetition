@@ -8,10 +8,10 @@
 
 		</div>
 		<div class="signin">
-			<% if :team_name === nil %>
-				<a href="/teams/new"><h4>I'm ready to get fit!</h4></a>
+			<% if :league_name === nil %>
+				<a href="/leagues/new"><h4>I'm ready to get fit!</h4></a>
 			<% else %>
-				<a href="/teams"><h4>I'm ready to get fit!</h4></a>
+				<a href="/leagues"><h4>I'm ready to get fit!</h4></a>
 			<% end %>
 
 			<!-- Steps for the week: <%= @weekly_steps.body %> -->

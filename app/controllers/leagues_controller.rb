@@ -5,19 +5,19 @@ class LeaguesController < ApplicationController
 
 	def show
 		@league = League.find(params[:id])
-		# redirect_to '/league/<%= league.id %>/teams'
+		# redirect_to '/league/<%= league.id %>'
 	end
 
 	def create
 		@league = League.new(league_params)
 		if @league.save
-			redirect_to '/league/<%= league.id %>/teams/new'
+			redirect_to '/league/<%= league.id %>'
 		end
 	end
 
 	def new
 		@league = League.new
-		redirect_to '/league/<%= league_id %>/teams/new'
+		# redirect_to '/league/<%= league_id %>/teams/new'
 	end
 
 private

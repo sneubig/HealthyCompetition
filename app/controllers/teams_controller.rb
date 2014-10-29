@@ -11,7 +11,7 @@ class TeamsController < ApplicationController
 	end
 
 	def create
-		# @league = League.find(params[:league_id])
+		@league = League.find(params[:league_id])
 		@team = Team.new(team_params)
 		if @team.save
 			redirect_to action: :index 
