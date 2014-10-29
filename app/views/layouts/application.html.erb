@@ -8,13 +8,18 @@
 </head>
 <body>
 
+<header>
+	<h1>Healthy Competition</h1>
+	<div class="signin">
+		<% if current_user %>
+			<span><%= link_to "Sign out", "/logout" %></span>
+		<% else %>	
+			<span><%= link_to "Sign in with FitBit", "/auth/fitbit" %> </span>
+		<% end %>
+	</div>
+</header>
 
-<% if current_user %>
-	Welcome, <%= current_user.name %>
-	<%= link_to "Sign out", "/logout" %>
-<% else %>	
-	<%= link_to "Sign in with FitBit", "/auth/fitbit" %> 
-<% end %>
+
 
 <%= yield %>
 

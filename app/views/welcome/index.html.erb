@@ -1,5 +1,5 @@
 <% if current_user %>
-	<p> Welcome back <%= current_user.name %> </p>
+	<!-- <p> Welcome back <%= current_user.name %> </p> -->
 
 	<div class="container">
 		<div class="logo">
@@ -13,6 +13,8 @@
 			<% else %>
 				<a href="/teams"><h4>I'm ready to get fit!</h4></a>
 			<% end %>
+
+			Steps for the week: <%= @weekly_steps.body %>
 		</div>
 
 
@@ -26,17 +28,11 @@
 		Steps: <%= @summary %>
 		</br>
 		</br>
-		Steps for the week: <%= @weekly_steps.body %> 
-		</br>
-		</br>
-		</br>
-		</br>
+		
+		
 		
 		
 
-
-
-	</div>
 
 
 

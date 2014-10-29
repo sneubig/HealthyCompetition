@@ -10,3 +10,25 @@ html, body{
 h1{
 	margin: 0;
 }
+
+header{
+	width: 100%;
+	height: 10%;
+	background-color: #FFF;
+	display: inline-block;
+	h1{
+		float: left;
+	}
+	.welcome{
+		text-align: center;
+	}
+}
+
+.signin{
+	width: 30%;
+	float: right;
+	display: inline-block;
+	span{
+		float: right;
+	}
+}
