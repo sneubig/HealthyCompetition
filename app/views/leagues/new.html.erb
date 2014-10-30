@@ -1,6 +1,9 @@
-<%= form_for(@league) do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
+<div class="new-league-form">
+	<h1> Create New League </h1>
+	<%= form_for(@league) do |f| %>
+	  <%= f.label :name %>:
+	  <%= f.text_field :name %><br><br>
 
-  <%= f.submit "Submit" %>
-<% end %>
+	  <%= f.submit "Submit" %>
+	<% end %>
+</div>

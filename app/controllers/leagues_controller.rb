@@ -17,9 +17,6 @@ class LeaguesController < ApplicationController
 
 	def new
 		@league = League.new
-		# if @league.save
-		# 	redirect_to '/league/#{id}/teams'
-		# end
 	end
 
 private
