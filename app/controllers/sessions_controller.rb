@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-
+    reset_session
     auth = request.env['omniauth.auth']
     # byebug
     # binding.pry

@@ -3,6 +3,11 @@ class TeamsController < ApplicationController
 	def index
 		@league = League.find(params[:league_id])
 		@teams = Team.all
+		access_token = User.prepare_access_token(session[:token], session[:token_secret])
+		#gets all the activity stats for particular day
+		@activities = access_token.request(:get, "http://api.fitbit.com/1/user/-/activities/date/2014-10-27.json")
+		# Returning steps 
+		@summary = JSON.parse(@activities.body)["summary"]["steps"]
 	end
 
 	def show

@@ -1,11 +1,15 @@
+<%= link_to 'Back', '/leagues' %>
 <div class="container">
 	<div class="league-name">
 		<h2><%= @league.name %></h2>
 	</div>
 	<div class="standings">
 		<h2>Standings</h2>
+		<!-- Current Users Name and Steps -->
+		<li> <%= current_user.name %> | <%= @summary %> </li>
+		<!-- Seeded Data Team Name and Steps -->
 		<% @teams.each do |team| %>
-			<li> <%= team.name %> <%= team.steps %></li>
+			<li> <%= team.name %> | <%= team.steps %></li>
 		<% end %>
 	</div>
 	<div class="sidebar">
