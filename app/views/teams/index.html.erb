@@ -16,13 +16,14 @@
 		<h2>Matchups</h2>
 		<div class="matchup">
 			<div class="teams">
+				<li> <%= current_user.name %> </li>
 				<% @teams.each do |team| %>
 					<li><%= team.name %> </li>
 				<% end %>
 			</div>
 			
 			<div class="score">
-				<!-- <li> <%= @summary %> </li> -->
+				<li> <%= @summary %> </li>
 				<% @teams_sorted.each do |team| %>
 					<li> <%= team.steps %> </li>
 				<% end %>
