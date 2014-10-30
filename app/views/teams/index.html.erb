@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="league-name">
-		<h2>League Name</h2>
+		<h2><%= @league.name %></h2>
 	</div>
 	<div class="standings">
 		<h2>Standings</h2>
@@ -23,6 +23,9 @@
 					<li> <%= team.steps %> </li>
 				<% end %>
 
+				<!-- @week_steps_summary.each do |key, value|
+					key : value
+				end -->
 			</div>
 		</div>
 	</div>
