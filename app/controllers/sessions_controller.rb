@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    reset_session
     auth = request.env['omniauth.auth']
     # byebug
     # binding.pry
@@ -11,7 +10,7 @@ class SessionsController < ApplicationController
 	  session[:user_id] = user.id
 	  session[:token] = auth["credentials"]["token"]
     session[:token_secret] = auth["credentials"]["secret"]
-	  redirect_to root_url, :notice => "signed in"
+	  redirect_to '/leagues', :notice => "signed in"
 
   
     # Exchange our oauth_token and oauth_token secret for the AccessToken instance.

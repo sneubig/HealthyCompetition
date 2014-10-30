@@ -1,0 +1,29 @@
+span{
+	float: right;
+}
+
+.league-list{
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	h1{
+		text-align: center;
+		margin-top: .5em;
+		text-decoration: underline;
+	}
+	li{
+		list-style-type: none;
+		margin-left: .5em;
+		padding: .5em;
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.2em;
+	}
+}
+
+
+
+

@@ -1,7 +1,9 @@
-<%= link_to "Create League", "/leagues/new" %>
+<span> <%= link_to "Create League", "/leagues/new" %> </span>
 
-<h1> Available Leagues </h1>
+<div class="league-list">
+	<h1> Leagues </h1>
+	<% @leagues.each do |league| %>
+		<li><a href="/leagues/<%= league.id %>/teams"><%= league.name %></a></li>
+	<% end %>
+</div>
 
-<% @leagues.each do |league| %>
-	<li><a href="/leagues/<%= league.id %>/teams"><%= league.name %></a></li>
-<% end %>

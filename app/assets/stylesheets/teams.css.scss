@@ -5,7 +5,7 @@ h2{
 .container{
 	height: 100%;
 	width: 100%;
-	background-color: green;
+	background-color: rgba(0,220,0,.4)
 }
 
 .league-name{
@@ -59,9 +59,9 @@ h2{
 
 .matchup{
 	width: 90%;
-	height: 10%;
+	height: 100%;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: 1px solid #fff;
 	margin-top: 5%;	
 }
 
@@ -70,9 +70,11 @@ h2{
 	height: 100%;
 	border: 1px solid black;
 	float: left;
+	margin-top: .5em;
 	li{
 		padding-bottom: .5em;
 		list-style-type: none;
+		padding: .3em;
 	}
 }
 
@@ -81,9 +83,11 @@ h2{
 	height: 100%;
 	float: right;
 	border: 1px solid black;
+	margin-top: .5em;
 	li{
 		padding-bottom: .5em;
 		list-style-type: none;
 		text-align: center;
+		padding: .3em;
 	}
 }

@@ -3,15 +3,14 @@
 
 	<div class="container">
 		<div class="logo">
-			<h1>Healthy</h1>
-			<h1>Competition</h1>
+			<h1>Healthy <br> Competition</h1>
 
 		</div>
 		<div class="signin">
 			<% if :league_name === nil %>
-				<a href="/leagues/new"><h4>I'm ready to get fit!</h4></a>
+				<a href="/auth/fitbit"><h4>I'm ready to get fit!</h4></a>
 			<% else %>
-				<a href="/leagues"><h4>I'm ready to get fit!</h4></a>
+				<a href="/auth/fitbit"><h4>I'm ready to get fit!</h4></a>
 			<% end %>
 		
 		</div>

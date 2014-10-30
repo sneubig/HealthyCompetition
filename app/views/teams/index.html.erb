@@ -1,5 +1,5 @@
-<%= link_to 'Back', '/leagues' %>
 <div class="container">
+	<div class="back"> <%= link_to 'Back', '/leagues' %> </div>
 	<div class="league-name">
 		<h2><%= @league.name %></h2>
 	</div>
@@ -8,7 +8,7 @@
 		<!-- Current Users Name and Steps -->
 		<li> <%= current_user.name %> | <%= @summary %> </li>
 		<!-- Seeded Data Team Name and Steps -->
-		<% @teams.each do |team| %>
+		<% @teams_sorted.each do |team| %>
 			<li> <%= team.name %> | <%= team.steps %></li>
 		<% end %>
 	</div>
@@ -23,7 +23,7 @@
 			
 			<div class="score">
 				<!-- <li> <%= @summary %> </li> -->
-				<% @teams.each do |team| %>
+				<% @teams_sorted.each do |team| %>
 					<li> <%= team.steps %> </li>
 				<% end %>
 
