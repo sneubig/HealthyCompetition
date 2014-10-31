@@ -15,7 +15,7 @@
 		<h2>Matchups</h2>
 		<div class="matchup">
 			<div class="teams">
-				<li> <%= current_user.name %> </li>
+				<li><%= current_user.name %></a> </li>
 				<% @teams.each do |team| %>
 					<li><%= team.name %> </li>
 				<% end %>
